@@ -1,0 +1,10 @@
+{%extends 'google_login/base.html' %}
+{%load socialaccount%}
+{%providers_media_js%}
+{%block content%}
+<h1>This is from homepage</h1>
+
+<a href="{%provider_login_url 'google'%}">Google connect</a>
+<a href="{%provider_login_url 'facebook'%}">facebook connect</a>
+<a href="{%provider_login_url 'instagram'%}">Instagram connect</a>
+{%endblock%}
