@@ -3,6 +3,29 @@ from .serializers import PostsSerializers
 from .serializers import CommentsSerializers
 from posts.models import Posts
 from posts.models import Comments
+import json
+from django.http import JsonResponse,HttpResponse
+from django.core import serializers
+
+
+def get_data(request, count, start):
+    print("the data in this is", count, start)
+    data = Posts.objects.all()[start:count]
+    # data_list = []
+    # if data:
+    #     if len(data) <= count:
+    #         data_list = data
+    #     else:
+    #         data_list = [data][0:count]
+    #
+    # print(data_list)
+    qs_json = serializers.serialize('json', data)
+    return HttpResponse(qs_json, content_type='application/json')
+
+
+    # print(a)
+
+
 
 class PostListView(ListAPIView):
     queryset = Posts.objects.all()

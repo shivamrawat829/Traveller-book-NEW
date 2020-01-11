@@ -24,6 +24,7 @@ class Posts(models.Model):
     # publish=models.DateTimeField(default=timezone.now, null=True)
     # status=models.CharField(max_length=20,choices=STATUS_CHOICES,default='draft', null=True)
     tags=TaggableManager()
+    #parent_places = ChildPosts(many=True, read_only=True)
 
     #published posts should display in descending order of date ,latest one should come first
     # class Meta:
@@ -33,7 +34,23 @@ class Posts(models.Model):
     def __str__(self):
         return self.title
 
-    # def get_absolute_url(self):
+# class ChildPosts(models.Model):
+#     description = models.CharField("Description", max_length=100, default="Description", null=True)
+#     place = models.CharField("Place", max_length=20, default="Journey to The End of the World...", null=True)
+#     image = models.ImageField(upload_to='post_images')
+#     author = models.ForeignKey(Posts, related_name='parent_places', on_delete=models.CASCADE, default=1)
+#
+#
+#     class Meta:
+#         ordering=('-created',)
+#
+#
+#     def __str__(self):
+#         return self.place
+
+
+
+                # def get_absolute_url(self):
     #     return reverse('post_detail',args=[self.publish.year,self.publish.strftime('%m'),self.publish.strftime('%d'),self.slug])
 
 class Comments(models.Model):
