@@ -4,7 +4,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .views import (
     PostListView,
-    get_data,
     PostsDetailView,
     PostsCreateView,
     PostsUpdateView,
@@ -13,15 +12,20 @@ from .views import (
     CommentsDetailView,
     CommentDeleteView,
     CommentUpdateView,
-    CommentCreateView
+    CommentCreateView,
+    DynamicViewData,
+    PlacesCreateView,
+    PlacesListView
+
 )
 
 urlpatterns = [
     # path('posts1/<int:count>/<int:id>', PostListView.as_view()),
-    # path('posts1', PostListView.as_view()),
-    # path('posts1?count=<int:count>&start=<int:id>', get_data),
-    path('posts1/<int:start>/<int:count>', get_data),
+    path('posts1', PostListView.as_view()),
+    path('postss/<int:start>/<int:count>',DynamicViewData.as_view()),
     path('create/', PostsCreateView.as_view()),
+    path('placescreate/', PlacesCreateView.as_view()),
+    path('places/', PlacesListView.as_view()),
     path('posts1/<pk>', PostsDetailView.as_view()),
     path('posts1/<pk>/update/', PostsUpdateView.as_view()),
     path('posts1/<pk>/delete/', PostsDeleteView.as_view()),

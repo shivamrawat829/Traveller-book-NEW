@@ -1,7 +1,7 @@
 from django.contrib import admin
 # admin.site.register(Posts)
 
-from .models import Posts,Comments
+from .models import Posts,Comments, Places
 # Register your models here.
 class PostAdmin(admin.ModelAdmin):
     pass
@@ -21,4 +21,5 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Comments,CommentAdmin)
+admin.site.register(Places)
 admin.site.register(Posts,PostAdmin)

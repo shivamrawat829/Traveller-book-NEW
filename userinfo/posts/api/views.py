@@ -1,41 +1,28 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView,DestroyAPIView, UpdateAPIView
 from .serializers import PostsSerializers
 from .serializers import CommentsSerializers
+from .serializers import PlacesSerializers
 from posts.models import Posts
 from posts.models import Comments
-import json
-from django.http import JsonResponse,HttpResponse
-from django.core import serializers
+from posts.models import Places
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 
-def get_data(request, count, start):
-    print("the data in this is", count, start)
-    data1 = Posts.objects.all().values()[start:count+start]
-    print("query setttttttttttttttttttt", data1)
-    data = json.dumps(list(data1))
-
-    print("disctionaryyyyyyyyyyyyyyyyyyyy", data)
-    # data_list =[]
-    # if data:
-    #     for dic in data.items():
-    #         data_list.append(dic['fields'])
-        # data_list = []
-        # if data:
-        #     if len(data) <= count:
-        #         data_list = data
-        #     else:
-        #         data_list = [data][0:count]
-        #
-        # print(data_list)
-        # qs_json = serializers.serialize('json', data_list)
-    qs_json = json.loads(data)
-    print("jsonnnnnnnnnnnnnnnnnnnn", qs_json)
+class DynamicViewData(APIView):
     serializer_class = PostsSerializers
-    # return HttpResponse(qs_json, content_type='application/json')
+    def get_queryset(self, start=None , count= None):
+        if start and count is not None:
+            data1 = Posts.objects.all().values()[start:count + start]
+            return data1
 
+    def get(self, request, start, count):
+        if start and count:
+            data = self.get_queryset(start, count)
 
-    # print(a)
-
+        else:
+            data = Posts.objects.all()
+        return Response(data)
 
 
 class PostListView(ListAPIView):
@@ -62,6 +49,16 @@ class PostsDeleteView(DestroyAPIView):
     serializer_class = PostsSerializers
     # permission_classes = (permissions.IsAuthenticated, )
 
+
+class PlacesListView(ListAPIView):
+    queryset = Places.objects.all()
+    serializer_class =PlacesSerializers
+
+
+
+class PlacesCreateView(CreateAPIView):
+    queryset = Places.objects.all()
+    serializer_class = PlacesSerializers
 
 
 

@@ -24,6 +24,7 @@ class Posts(models.Model):
     # publish=models.DateTimeField(default=timezone.now, null=True)
     # status=models.CharField(max_length=20,choices=STATUS_CHOICES,default='draft', null=True)
     tags=TaggableManager()
+    city = models.CharField("City", max_length=20, default="Delhi")
     #parent_places = ChildPosts(many=True, read_only=True)
 
     #published posts should display in descending order of date ,latest one should come first
@@ -34,19 +35,19 @@ class Posts(models.Model):
     def __str__(self):
         return self.title
 
-# class ChildPosts(models.Model):
-#     description = models.CharField("Description", max_length=100, default="Description", null=True)
-#     place = models.CharField("Place", max_length=20, default="Journey to The End of the World...", null=True)
-#     image = models.ImageField(upload_to='post_images')
-#     author = models.ForeignKey(Posts, related_name='parent_places', on_delete=models.CASCADE, default=1)
-#
-#
-#     class Meta:
-#         ordering=('-created',)
-#
-#
-#     def __str__(self):
-#         return self.place
+class Places(models.Model):
+    description = models.CharField("Description", max_length=100, default="Description", null=True)
+    place = models.CharField("Place", max_length=20, default="Journey to The End of the World...", null=True)
+    image = models.ImageField(upload_to='post_images')
+    post_id = models.ForeignKey(Posts, related_name='places', on_delete=models.CASCADE, default=1)
+    # user_id = models.ForeignKey(User, related_name='blog_posts',on_delete=models.CASCADE, default=1)
+
+    class Meta:
+        ordering=('-place',)
+
+
+    def __str__(self):
+        return self.place
 
 
 

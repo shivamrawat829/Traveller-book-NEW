@@ -1,10 +1,16 @@
 from rest_framework.serializers import ModelSerializer
-from posts.models import Posts
+from posts.models import Posts, Places
+from rest_framework import serializers
 from django.contrib.auth.models import User
 
 
 
-
+# class PlacesSerializers(ModelSerializer):
+#     class Meta:
+#         model = Places
+#         fields = ('id', 'description', 'place', 'image')
+#
+#
 class PostSerializer(ModelSerializer):
     class Meta:
         model = Posts
