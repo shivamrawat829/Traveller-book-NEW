@@ -25,7 +25,7 @@ SECRET_KEY = '#%@nwuwr6doqe_h=ipx@wuuo!072_bv(gyp+ew3p3k(d#$hk^p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-13-126-147-87.ap-south-1.compute.amazonaws.com','13.126.147.87']
+ALLOWED_HOSTS = ['3.6.159.0', '127.0.0.1']
 SITE_ID=1
 
 
@@ -50,12 +50,10 @@ INSTALLED_APPS = [
     'posts',
     'settings',
     'taggit',
-    # Login via Google
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.instagram',
     'users',
-    'blog',
     'crispy_forms',
 ]
 

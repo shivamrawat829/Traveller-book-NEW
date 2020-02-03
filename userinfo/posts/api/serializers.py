@@ -1,9 +1,7 @@
 from rest_framework import serializers
-
 from posts.models import Posts
 from posts.models import Comments
 from posts.models import Places
-
 
 
 class PlacesSerializers(serializers.ModelSerializer):
@@ -12,18 +10,19 @@ class PlacesSerializers(serializers.ModelSerializer):
         fields = ('id', 'description', 'place', 'image', 'post_id')
 
 
-
 class PostsSerializers(serializers.ModelSerializer):
     places = PlacesSerializers(many=True, read_only=True)
+
     class Meta:
         model = Posts
-        fields = ('id', 'rating', 'title', 'description', 'place','image', 'places')
-
-
-
+        fields = ('id', 'rating',
+                  'title', 'description',
+                  'place', 'image',
+                  'places', 'slug',
+                  'created')
 
 
 class CommentsSerializers(serializers.ModelSerializer):
     class Meta:
         model = Comments
-        fields = ('post','name','email','body','created','updated','active')
+        fields = ('post', 'comment', 'created', 'updated', 'active')

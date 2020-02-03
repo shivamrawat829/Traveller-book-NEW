@@ -2,9 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd728595-ff20-45dc-ae05-508dd583ea01" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/IMG_20190810_152757.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/IMG_20190810_152951.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/IMG_20190810_152951_I9POIe8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/IMG_20190810_182437.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/IMG_20190810_182437_WTVWGv6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/Image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/Screenshot_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/Screenshot_1_9NLyyvX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_100950.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_152757.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_152951.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154642_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154642_1_PjW4Q55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154651.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154651_DVsFfin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154651_WqCNI4i.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154705_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154705_1_zI0aIPE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154733_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_154746.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_160001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_171819.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_172804_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_180349.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_180349_lm7JVEF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_180349_zCMoHmK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_182256.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_182256_nFneHig.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_182428.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190810_183412.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190811_114637.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190811_121050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190811_134357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190811_164817_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190811_172139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20190812_164252.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_1sxnNhm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_2TX7z9s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_2nnGZLp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_3BOCKRi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_3eJxmN6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_46ZpUMO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_5PoRq56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_5cDcmZo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_5jbFRYH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_68lf9my.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_7maZuzZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_89k51aE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_9Siwjjb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_9d9keXj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_9frp8NQ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_AUIbncN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_BfULolr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_CmbCsfe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_EnXGIkK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_Gew5IWV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_ILbINXp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_IMDjoep.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_IO1Px7h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_J2Zm83d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_K2mBDpE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_LMbrOOh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_N9k0AvH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_NMxaBIk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_NjbEh6Y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_PXGSfdH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_SsAxaUk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_SxhUKVo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_TB9sjup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_UBAFJQI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_VETQ9S8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_VPVUra4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_VqmAknP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_VxFyhA3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_XEHSvsE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_XJkVNDZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_Y0M9KDv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_YbmOsh9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_a3EWhXd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_ccS0K4t.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_coYkpyr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_eCJWIE7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_fpd0Eqj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_g0R1BFY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_g1wDzrU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_g3OGaB5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_gYbiZ0d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_hGEwazk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_hguQIrx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_i4vXowr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_ivNrKIh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_kMsos20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_nqr2VHh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_oHVafqg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_pmaIDDP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_v6XFdDi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_xrn2NvL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_yit7Cve.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/IMG_20191222_165111_ztB0CFp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_49mmHvL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_FIBXILW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_IGANYDq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_PlsWWRD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_Ymr77i4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_gpPGbmI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_l7jm9f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_nwbmDEE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/Screenshot_1_q0ImmeL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_27u6zSj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_4lbPgrU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_I34przG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_K6w0b50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_KNQqWeV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_L9b8cub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_LFl3MmW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_LXAl1Zp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_bYoRB7f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_cdgFhkG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_qLNKsQr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/buy2_s1WSMs1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/connection_with_other_system.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/media/post_images/maketo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/settings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/settings/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userinfo/userinfo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/userinfo/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

@@ -11,7 +11,8 @@ from rest_framework.response import Response
 
 class DynamicViewData(APIView):
     serializer_class = PostsSerializers
-    def get_queryset(self, start=None , count= None):
+
+    def get_queryset(self, start=None, count=None):
         if start and count is not None:
             data1 = Posts.objects.all().values()[start:count + start]
             return data1
@@ -27,16 +28,19 @@ class DynamicViewData(APIView):
 
 class PostListView(ListAPIView):
     queryset = Posts.objects.all()
-    serializer_class =PostsSerializers
+    serializer_class = PostsSerializers
+
 
 class PostsDetailView(RetrieveAPIView):
     queryset = Posts.objects.all()
-    serializer_class =PostsSerializers
+    serializer_class = PostsSerializers
+
 
 class PostsCreateView(CreateAPIView):
     queryset = Posts.objects.all()
     serializer_class = PostsSerializers
     # permission_classes = (permissions.IsAuthenticated, )
+
 
 class PostsUpdateView(UpdateAPIView):
     queryset = Posts.objects.all()
@@ -52,8 +56,7 @@ class PostsDeleteView(DestroyAPIView):
 
 class PlacesListView(ListAPIView):
     queryset = Places.objects.all()
-    serializer_class =PlacesSerializers
-
+    serializer_class = PlacesSerializers
 
 
 class PlacesCreateView(CreateAPIView):
@@ -61,14 +64,14 @@ class PlacesCreateView(CreateAPIView):
     serializer_class = PlacesSerializers
 
 
-
 class CommentsListView(ListAPIView):
     queryset = Comments.objects.all()
-    serializer_class =CommentsSerializers
+    serializer_class = CommentsSerializers
+
 
 class CommentsDetailView(RetrieveAPIView):
     queryset = Comments.objects.all()
-    serializer_class =CommentsSerializers
+    serializer_class = CommentsSerializers
 
 
 class CommentCreateView(CreateAPIView):
