@@ -1,10 +1,10 @@
 from django.db import models
 # from posts.models import Posts
-# from rest_auth. import 
+# from rest_auth. import
 from django.contrib.auth.models import User
 
 
-class Settings(models.Model):
+class UserProfile(models.Model):
     profile_image = models.ImageField("Image", blank=True, null=True)
     name = models.CharField("Name", max_length=100, blank=True, null=True)
     email = models.EmailField("Email", max_length=254)

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from taggit.managers import TaggableManager
 from django.utils import timezone
-from settings.models import Settings
+from user_profile.models import UserProfile
 from django.contrib.auth.models import User
 from datetime import datetime
 

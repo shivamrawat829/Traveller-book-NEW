@@ -48,13 +48,13 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     'rest_framework.authtoken',
     'posts',
-    'settings',
     'taggit',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.instagram',
     'users',
     'crispy_forms',
+    'user_profile',
 ]
 
 MIDDLEWARE = [
