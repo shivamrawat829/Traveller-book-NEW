@@ -2,14 +2,16 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView,
 from .serializers import PostsSerializers
 from .serializers import CommentsSerializers
 from .serializers import PlacesSerializers
+from .serializers import UserProfileSerializer
 from posts.models import Posts
 from posts.models import Comments
 from posts.models import Places
+from user_profile.models import UserProfile
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
 
-class DynamicViewData(APIView):
+class ScrollablePosts(APIView):
     serializer_class = PostsSerializers
 
     def get_queryset(self, start=None, count=None):
@@ -24,6 +26,24 @@ class DynamicViewData(APIView):
         else:
             data = Posts.objects.all()
         return Response(data)
+
+
+class UserTokenInfo(APIView):
+    serializer_class = UserProfileSerializer
+
+    def get_queryset(self, token):
+        if token is not None:
+            data1 = UserProfile.objects.all().values()[0]
+            return data1
+
+    def get(self, token):
+        if token:
+            data = self.get_queryset(token)
+
+        else:
+            data = UserProfile.objects.all()
+        return Response(data)
+
 
 
 class PostListView(ListAPIView):

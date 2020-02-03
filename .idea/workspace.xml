@@ -3,31 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dd728595-ff20-45dc-ae05-508dd583ea01" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0002_auto_20191103_2031.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0003_auto_20191103_2302.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0004_auto_20191104_1150.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0005_auto_20191111_1110.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0006_auto_20191111_1238.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0007_auto_20191111_1242.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0008_posts_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0009_posts_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0010_auto_20200125_1238.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0011_auto_20200131_0648.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0012_auto_20200202_2006.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/0013_auto_20200202_2134.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/migrations/0002_settings_user_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/settings/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/userinfo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/userinfo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/user_profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/user_profile/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
