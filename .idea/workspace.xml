@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd728595-ff20-45dc-ae05-508dd583ea01" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userinfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userinfo/userinfo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/userinfo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,10 @@
       <updated>1578546525459</updated>
       <workItem from="1580534166276" duration="1470000" />
       <workItem from="1580536153076" duration="1546000" />
+      <workItem from="1580548760640" duration="1558000" />
+      <workItem from="1580552170356" duration="1604000" />
+      <workItem from="1580554151370" duration="753000" />
+      <workItem from="1580557793428" duration="18000" />
     </task>
     <servers />
   </component>
