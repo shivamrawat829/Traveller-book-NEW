@@ -1,8 +1,7 @@
 from django.contrib import admin
-# admin.site.register(Posts)
+from .models import Posts, Comments, Places
 
-from .models import Posts,Comments, Places
-# Register your models here.
+
 class PostAdmin(admin.ModelAdmin):
     pass
     # list_display=['title','slug','setting_id','body','publish','created','updated','status']
@@ -15,11 +14,11 @@ class PostAdmin(admin.ModelAdmin):
 
 
 class CommentAdmin(admin.ModelAdmin):
-    list_display=['name','email','body','created','post','updated','active']
-    list_filter=('active','created','updated')
-    search_fields=('name','email','body')
+    list_display = ['comment', 'created', 'post', 'updated']
+    list_filter = ('created', 'updated')
+    search_fields = ('comment', 'created')
 
 
-admin.site.register(Comments,CommentAdmin)
+admin.site.register(Comments, CommentAdmin)
 admin.site.register(Places)
-admin.site.register(Posts,PostAdmin)
+admin.site.register(Posts, PostAdmin)

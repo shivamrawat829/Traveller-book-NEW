@@ -26,6 +26,8 @@ SECRET_KEY = '#%@nwuwr6doqe_h=ipx@wuuo!072_bv(gyp+ew3p3k(d#$hk^p'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+
 SITE_ID=1
 
 
@@ -48,15 +50,13 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     'rest_framework.authtoken',
     'posts',
-    'settings',
     'taggit',
-    # Login via Google
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.instagram',
     'users',
-    'blog',
     'crispy_forms',
+    'user_profile',
 ]
 
 MIDDLEWARE = [

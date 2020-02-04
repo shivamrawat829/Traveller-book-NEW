@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="dd728595-ff20-45dc-ae05-508dd583ea01" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userinfo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userinfo/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/manage.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/posts/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/posts/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userinfo/user_profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userinfo/user_profile/models.py" afterDir="false" />
+>>>>>>> 2eeeaaf63e04451189d850a67c77edcdbcef7797
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

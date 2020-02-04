@@ -2,16 +2,19 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView,
 from .serializers import PostsSerializers
 from .serializers import CommentsSerializers
 from .serializers import PlacesSerializers
+from .serializers import UserProfileSerializer
 from posts.models import Posts
 from posts.models import Comments
 from posts.models import Places
+from user_profile.models import UserProfile
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
 
-class DynamicViewData(APIView):
+class ScrollablePosts(APIView):
     serializer_class = PostsSerializers
-    def get_queryset(self, start=None , count= None):
+
+    def get_queryset(self, start=None, count=None):
         if start and count is not None:
             data1 = Posts.objects.all().values()[start:count + start]
             return data1
@@ -25,18 +28,39 @@ class DynamicViewData(APIView):
         return Response(data)
 
 
+class UserTokenInfo(APIView):
+    serializer_class = UserProfileSerializer
+
+    def get_queryset(self, token):
+        if token is not None:
+            data1 = UserProfile.objects.all().values()[0]
+            return data1
+
+    def get(self, token):
+        if token:
+            data = self.get_queryset(token)
+
+        else:
+            data = UserProfile.objects.all()
+        return Response(data)
+
+
+
 class PostListView(ListAPIView):
     queryset = Posts.objects.all()
-    serializer_class =PostsSerializers
+    serializer_class = PostsSerializers
+
 
 class PostsDetailView(RetrieveAPIView):
     queryset = Posts.objects.all()
-    serializer_class =PostsSerializers
+    serializer_class = PostsSerializers
+
 
 class PostsCreateView(CreateAPIView):
     queryset = Posts.objects.all()
     serializer_class = PostsSerializers
     # permission_classes = (permissions.IsAuthenticated, )
+
 
 class PostsUpdateView(UpdateAPIView):
     queryset = Posts.objects.all()
@@ -52,8 +76,7 @@ class PostsDeleteView(DestroyAPIView):
 
 class PlacesListView(ListAPIView):
     queryset = Places.objects.all()
-    serializer_class =PlacesSerializers
-
+    serializer_class = PlacesSerializers
 
 
 class PlacesCreateView(CreateAPIView):
@@ -61,14 +84,14 @@ class PlacesCreateView(CreateAPIView):
     serializer_class = PlacesSerializers
 
 
-
 class CommentsListView(ListAPIView):
     queryset = Comments.objects.all()
-    serializer_class =CommentsSerializers
+    serializer_class = CommentsSerializers
+
 
 class CommentsDetailView(RetrieveAPIView):
     queryset = Comments.objects.all()
-    serializer_class =CommentsSerializers
+    serializer_class = CommentsSerializers
 
 
 class CommentCreateView(CreateAPIView):
