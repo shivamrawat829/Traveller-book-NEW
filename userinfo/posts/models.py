@@ -10,9 +10,9 @@ from datetime import datetime
 
 class Posts(models.Model):
     title = models.CharField("Title", max_length=25, default="title", null=True)
-    description = models.TextField("Description", max_length=100, default="Description", null=True)
+    description = models.TextField("Description", max_length=1200, default="Description", null=True)
     rating = models.IntegerField("Rating", null=True)
-    place = models.CharField("Place", max_length=20, default="Place1", null=True)
+    place = models.CharField("Place", max_length=20, default="Place", null=True)
     image = models.ImageField(upload_to='media')
     created = models.DateTimeField(auto_now_add=True, null=True)
     slug = models.SlugField(max_length=264, null=True)
@@ -29,7 +29,7 @@ class Posts(models.Model):
 
 class Places(models.Model):
     place = models.CharField("Place", max_length=50, default="Journey to The End of the World...", null=True)
-    description = models.CharField("Description", max_length=1000, default="Good place...", null=True)
+    description = models.CharField("Description", max_length=1200, default="Good place...", null=True)
     image = models.ImageField(upload_to='media')
     post_id = models.ForeignKey(Posts, related_name='places', on_delete=models.CASCADE, default=1)
     # user_id = models.ForeignKey(User, related_name='blog_posts',on_delete=models.CASCADE, default=1)
