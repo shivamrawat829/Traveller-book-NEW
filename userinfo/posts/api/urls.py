@@ -15,13 +15,10 @@ from .views import (
     CommentCreateView,
     ScrollablePosts,
     PlacesCreateView,
-    PlacesListView,
-    UserTokenInfo
-
+    PlacesListView
 )
 
 urlpatterns = [
-    path('user/info/<str:token>', UserTokenInfo.as_view()),
     path('posts', PostListView.as_view()),
     path('posts/<int:start>/<int:count>', ScrollablePosts.as_view()),
     path('posts/create/', PostsCreateView.as_view()),

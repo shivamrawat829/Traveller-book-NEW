@@ -6,6 +6,8 @@ from PIL import Image
 class Profile(models.Model):
     user = models.OneToOneField(User,  on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    followers = models.IntegerField('Followers', default=0)
+    cover_pic = models.ImageField(default='default.jpg', upload_to='cover_pics')
 
     def __str__(self):
         # return f'{self.user.username} Profile'

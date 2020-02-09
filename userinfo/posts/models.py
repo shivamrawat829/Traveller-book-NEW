@@ -19,6 +19,7 @@ class Posts(models.Model):
     author = models.ForeignKey(User, related_name='blog_posts', on_delete=models.CASCADE, default=1)
     tags = TaggableManager()
     city = models.CharField("City", max_length=20, default="Delhi")
+    # liked = models.ImageField("Liked", default=0)
     #published posts should display in descending order of date ,latest one should come first
     # class Meta:
     #     ordering=('-publish',)

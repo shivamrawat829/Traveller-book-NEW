@@ -28,9 +28,15 @@ class ProfileSerializers(ModelSerializer):
 
 
 class UserSerializer(ModelSerializer):
+
+    total_posts = serializers.SerializerMethodField('get_total_posts')
     blog_posts = PostSerializer(many=True, read_only=True)
-    moreinfo = ProfileSerializers(many=False, read_only=True)
+    # moreinfo = ProfileSerializers(many=False, read_only=True)
 
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['id','username','first_name','last_name','email','is_superuser','blog_posts','total_posts']
+
+    def get_total_posts(self, request):
+        data = Posts.objects.filter(author = request.id)
+        return len(data)

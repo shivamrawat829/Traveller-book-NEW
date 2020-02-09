@@ -28,23 +28,6 @@ class ScrollablePosts(APIView):
         return Response(data)
 
 
-class UserTokenInfo(APIView):
-    serializer_class = UserProfileSerializer
-
-    def get_queryset(self, token):
-        if token is not None:
-            data1 = UserProfile.objects.all().values()[0]
-            return data1
-
-    def get(self, token):
-        if token:
-            data = self.get_queryset(token)
-        else:
-            data = UserProfile.objects.all()
-        return Response(data)
-
-
-
 class PostListView(ListAPIView):
     queryset = Posts.objects.all()
     serializer_class = PostsSerializers

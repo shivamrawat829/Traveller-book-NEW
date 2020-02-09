@@ -25,7 +25,6 @@ class CustomAuthToken(ObtainAuthToken):
 
 class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
-    print("user view set chala")
     queryset = User.objects.all()
 
 
