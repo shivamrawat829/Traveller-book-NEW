@@ -33,7 +33,7 @@ class PostsSerializers(serializers.ModelSerializer):
                   'title', 'description',
                   'place', 'image',
                   'places', 'slug',
-                  'created')
+                  'created','author')
 
 
 class CommentsSerializers(serializers.ModelSerializer):
