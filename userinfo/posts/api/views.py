@@ -2,11 +2,11 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView, CreateAPIView,
 from .serializers import PostsSerializers
 from .serializers import CommentsSerializers
 from .serializers import PlacesSerializers
-from .serializers import UserProfileSerializer
+# from .serializers import UserProfileSerializer
 from posts.models import Posts
 from posts.models import Comments
 from posts.models import Places
-from user_profile.models import UserProfile
+# from user_profile.models import UserProfile
 from rest_framework.views import APIView
 from rest_framework.response import Response
 

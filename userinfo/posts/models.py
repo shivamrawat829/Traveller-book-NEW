@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from taggit.managers import TaggableManager
 from django.utils import timezone
-from user_profile.models import UserProfile
+# from user_profile.models import UserProfile
 from django.contrib.auth.models import User
 from datetime import datetime
 
@@ -26,6 +26,10 @@ class Posts(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Likes(models.Model):
+    liked_by = models.ForeignKey(User, related_name='liked_by_user', on_delete=models.CASCADE, null=True)
 
 
 class Places(models.Model):

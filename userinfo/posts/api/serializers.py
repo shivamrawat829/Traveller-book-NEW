@@ -2,17 +2,17 @@ from rest_framework import serializers
 from posts.models import Posts
 from posts.models import Comments
 from posts.models import Places
-from user_profile.models import UserProfile
+# from user_profile.models import UserProfile
 
-
-class UserProfileSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = UserProfile
-        fields = ('id', 'profile_image',
-                  'name', 'email',
-                  'interests', 'user_id', 'bio',
-                  'no_of_posts')
+#
+# class UserProfileSerializer(serializers.ModelSerializer):
+#
+#     class Meta:
+#         model = UserProfile
+#         fields = ('id', 'profile_image',
+#                   'name', 'email',
+#                   'interests', 'user_id', 'bio',
+#                   'no_of_posts')
 
 
 class PlacesSerializers(serializers.ModelSerializer):

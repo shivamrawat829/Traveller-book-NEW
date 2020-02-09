@@ -2,9 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 
-
 class Profile(models.Model):
-    user = models.OneToOneField(User,  on_delete=models.CASCADE)
+    user = models.OneToOneField(User,  on_delete=models.CASCADE, related_name='user_profile')
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     followers = models.IntegerField('Followers', default=0)
     cover_pic = models.ImageField(default='default.jpg', upload_to='cover_pics')
@@ -22,3 +21,11 @@ class Profile(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.image.path)
+
+class Followers(models.Model):
+    # follower = models.OneToOneField(User,  on_delete=models.CASCADE, related_name='follower')
+    follower = models.ForeignKey(User, related_name='follower_id', on_delete=models.CASCADE, null=True)
+    # following = models.OneToOneField(User,  on_delete=models.CASCADE, related_name='followers')
+    # image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    # followers = models.IntegerField('Followers', default=0)
+    # cover_pic = models.ImageField(default='default.jpg', upload_to='cover_pics')
