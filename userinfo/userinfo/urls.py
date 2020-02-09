@@ -38,6 +38,7 @@ urlpatterns = [
     path('api/', include('posts.api.urls')),
     path('accounts/', include('allauth.urls')),
     path('users/', include('users.api.urls')),
+
     # path(r'^$', views.post_list),
     # path(r'^tag/(?P<tag_slug>[-\w]+/$)', views.post_list,name='post_list_by_tag_name'),
     # path(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<post>[-\w]+)/$',

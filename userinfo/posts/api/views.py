@@ -39,7 +39,6 @@ class UserTokenInfo(APIView):
     def get(self, token):
         if token:
             data = self.get_queryset(token)
-
         else:
             data = UserProfile.objects.all()
         return Response(data)
