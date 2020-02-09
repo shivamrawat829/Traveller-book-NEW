@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from .views import CustomAuthToken
 
 router = DefaultRouter()
-router.register('posts', UserViewSet, basename='post')
+router.register('user', UserViewSet, basename='user')
 urlpatterns = [
                 path('',include(router.urls)),
                 path(r'api-token-auth/', CustomAuthToken.as_view())

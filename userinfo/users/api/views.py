@@ -7,6 +7,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 
+
 class CustomAuthToken(ObtainAuthToken):
 
     def post(self, request, *args, **kwargs):
@@ -16,7 +17,7 @@ class CustomAuthToken(ObtainAuthToken):
         user = serializer.validated_data['user']
         token, created = Token.objects.get_or_create(user=user)
         return Response({
-            'token': token.key,
+            'key': token.key,
             'user_id': user.pk,
             'email': user.email
         })
@@ -24,7 +25,9 @@ class CustomAuthToken(ObtainAuthToken):
 
 class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
+    print("user view set chala")
     queryset = User.objects.all()
+
 
 class PostViewset(ModelViewSet):
     serializer_class = PostSerializer

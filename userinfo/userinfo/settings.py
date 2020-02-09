@@ -100,7 +100,7 @@ WSGI_APPLICATION = 'userinfo.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -111,6 +111,18 @@ DATABASES = {
         'PORT':'5432',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'postgres',
+#         'USER':'Shubham',
+#         'PASSWORD':'a',
+#         'HOST':'localhost',
+# 'PORT':'5432',
+#     }
+# }
+
 
 
 REST_FRAMEWORK = {
